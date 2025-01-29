@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>伝言板</title>
+    <style>
+        /* スタイルシート */
+        #board {
+            border: 1px solid black;
+            padding: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 5px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>伝言板</h1>
+    
+    <div id="board"></div>
+
+    <div id="input-container">
+        <input type="text" id="input" placeholder="メッセージを入力してください">
+        <button onclick="submitForm()">送信</button>
+    </div>
+
+    <script src="dengon.js"></script>
+</body>
+</html>
